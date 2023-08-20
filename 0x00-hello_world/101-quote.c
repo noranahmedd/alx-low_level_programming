@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: Prints a sentence to the standard error.
+ * Description: Prints a specific sentence to the standard error.
  *
  * Return: Always 1 (Error)
  */
