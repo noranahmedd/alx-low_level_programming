@@ -3,12 +3,14 @@
 /**
  * main - Entry point
  *
- * Description: Prints a specific sentence to the standard error.
+ * Description: Prints a quote using the write function.
  *
  * Return: Always 1 (Error)
  */
 int main(void)
 {
-    write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+    char quote[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
+    write(1, quote, 59);
     return (1);
 }
