@@ -13,8 +13,8 @@ int isSeparator(char c)
 
 	for (i = 0; sep[i] != '\0'; i++)
 	{
-	if (c == sep[i])
-	return (1);
+		if (c == sep[i])
+			return (1);
 	}
 
 	return (0);
@@ -33,17 +33,34 @@ char *cap_string(char *s)
 
 	while (*s)
 	{
-	if (isSeparator(*s))
-	separator = 1;
-	else if (*s >= 'a' && *s <= 'z' && separator)
-	{
-	*s -= 32;
-	separator = 0;
-	}
-	else
-	separator = 0;
+		if (isSeparator(*s))
+		{
+			separator = 1;
+		}
+		else if ((*s >= 'a' && *s <= 'z') || (*s >= 'A' && *s <= 'Z'))
+		{
+			if (separator)
+			{
+				if (*s >= 'a' && *s <= 'z')
+				{
+					*s -= 32;
+				}
+				separator = 0;
+			}
+			else
+			{
+				if (*s >= 'A' && *s <= 'Z')
+				{
+					*s += 32;
+				}
+			}
+		}
+		else
+		{
+			separator = 0;
+		}
 
-	s++;
+		s++;
 	}
 
 	return (ptr);
