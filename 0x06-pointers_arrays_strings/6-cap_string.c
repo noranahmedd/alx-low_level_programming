@@ -9,7 +9,7 @@
 int isSeparator(char c)
 {
 	int i;
-	char sep[] = {"\t\n,/?\"(){}"};
+	char sep[] = "\t\n,/?\"(){}";
 
 	for (i = 0; sep[i] != '\0'; i++)
 	{
