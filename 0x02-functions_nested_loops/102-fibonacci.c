@@ -6,18 +6,22 @@
  */
 int main(void)
 {
-	int i, prev = 1, curr = 2, next;
+	long long int prev = 1, curr = 2, next;
 
-	printf("%d, %d",prev, curr );
+	printf("%lld, %lld, ", prev, curr);
 
-	for (i = 3; i < 50; i++)
+	for (int i = 3; i < 98; i++)
 	{
 		next = prev + curr;
-		printf("%d, ", next);
+		printf("%lld", next);
+
+		if (i != 97)
+			printf(", ");
+
 		prev = curr;
 		curr = next;
 	}
-	printf("%d\n", next);
-	return (0);
+	printf("\n");
 
+	return (0);
 }
