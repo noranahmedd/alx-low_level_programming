@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * main - Entry point
  *
@@ -6,14 +8,14 @@
  */
 int main(void)
 {
-	long long int prev = 1, curr = 2, next;
+	int prev = 1, curr = 2, next;
 
-	printf("%lld, %lld, ", prev, curr);
+	printf("%d, %d, ", prev, curr);
 
 	for (int i = 3; i < 98; i++)
 	{
 		next = prev + curr;
-		printf("%lld", next);
+		printf("%d", next);
 
 		if (i != 97)
 			printf(", ");
