@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * main - Entry point
  *
@@ -12,12 +13,12 @@ int main(void)
 
 	for (i = 3; i < 98; i++)
 	{
-	next = prev + curr;
-	printf(", %d", next);
-	prev = curr;
-	curr = next;
+		next = prev + curr;
+		printf(", %d", next);
+		prev = curr;
+		curr = next;
 	}
-	printf("%d\n", next);
+	printf("\n");
 
 	return (0);
 }
