@@ -13,8 +13,8 @@ void print_chessboard(char (*a)[8])
 	{
 		for (j = 0; j < 8; j++)
 		{
-			_printchar(a[i][j]);
+			_putchar(a[i][j]);
 		}
-		_printchar('\n');
+		_putchar('\n');
 	}
 }
