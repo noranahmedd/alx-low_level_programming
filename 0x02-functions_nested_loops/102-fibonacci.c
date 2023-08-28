@@ -8,11 +8,11 @@
  */
 int main(void)
 {
-	int prev = 1, curr = 2, next;
+	int i, prev = 1, curr = 2, next;
 
 	printf("%d, %d, ", prev, curr);
 
-	for (int i = 3; i < 98; i++)
+	for (i = 3; i < 98; i++)
 	{
 		next = prev + curr;
 		printf("%d", next);
