@@ -1,5 +1,4 @@
 #include <stdarg.h>
-#include "main.h"
 /**
  * print_numbers - Prints numbers followed by a new line.
  * @separator: The string to be printed between numbers.
