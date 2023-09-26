@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- *size_t print_listint-  prints all the elements of a listint_t list
+ *print_listint-  prints all the elements of a linked list
  *
  *@h: Pointer to the head of the list;
  *
