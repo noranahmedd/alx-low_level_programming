@@ -4,7 +4,8 @@
  * @size: The size of the array to create
  * @c: The character used for initialization
  *
- * Return: Pointer to the created array, or NULL if size is 0 or if malloc fails
+ * Return: Pointer to the created array,
+ * or NULL if size is 0 or if malloc fails
  */
 char *create_array(unsigned int size, char c)
 {
