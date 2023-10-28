@@ -20,11 +20,11 @@ int main(int argc, char *argv[])
 			if (*c < '0' || *c > '9')
 			{
 				printf("Error\n");
-				return 1;
+				return (1);
 			}
 		}
 		sum += atoi(argv[argc]);
 	}
 	printf("%d\n", sum);
-	return 0;
+	return (0);
 }
